@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+	</body>
+	<button onclick="openDoc()">打开word</button>
+	
+	<script type="text/javascript">
+		
+		function openDoc(){
+			let filePath = 'https://chenyueqin1010.github.io/testPage/demo.docx';
+
+			var doc = new ActiveXObject("Word.Application");
+			doc.visible = true;
+			doc.Documents.Open(filePath);
+		}
+	</script>
+
+</html>
